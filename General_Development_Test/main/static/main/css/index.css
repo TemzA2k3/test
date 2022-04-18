@@ -1,0 +1,187 @@
+body {
+    background: url("https://metodika-lysenko.ru/wp-content/uploads/2018/01/%D1%84%D0%BE%D0%BD-%D1%81%D0%B0%D0%B9%D1%82-%D0%B1%D0%B5%D1%81%D1%88%D0%BE%D0%B2%D0%BD%D1%8B%D0%B9-%D0%BF%D0%BE%D0%BC%D0%B5%D0%BB%D1%8C%D1%87%D0%B5.png");
+}
+
+aside {
+    float: left;
+    background: black;
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #fff;
+    border-right: 5px solid #4d4d4d;
+}
+
+aside img {
+    width: 80px;
+    height: 80px;
+    float: left;
+
+}
+
+aside .logo {
+    font-size: 40px;
+    margin-left: 10px;
+    font-weight: bold;
+    position: relative;
+    top: +5px;
+}
+
+aside h3 {
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside a {
+    text-decoration: none;
+}
+
+aside ul li {
+    font-size: 20px;
+    color: white;
+    display: block;
+    margin-top: 20px;
+    transition: transform .6s ease;
+}
+
+aside ul li:hover, aside ul a:hover {
+    color: #eb5959;
+    transform: scale(1.05);
+
+}
+
+main .features {
+    float: left;
+    color: black;
+    margin-top: 100px;
+    text-align: center;
+    width: 75%;
+}
+
+.about_me {
+    margin-top: 200px;
+    font-size: 65px;
+    font-family: Arial;
+}
+
+.social_net {
+    border-spacing: 20px;
+    border: 100px;
+    width: 200px;
+}
+
+.container {
+    display: flex;
+    background: transparent;
+    grid-row: 1 / -1;
+    align-items: center;
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    width: 100%;
+    height: calc(100% * 0.45);
+    background: lightgray;
+    margin: 20% 30% 0 30%;
+    box-shadow: 0px 0px 50px black;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.logpass {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    height: 40%;
+    flex-direction: column;
+    align-items: center;
+
+
+
+}
+
+.login {
+    height: 25%;
+    width: 100%;
+    margin: 1.5em 0 0;
+    background: white;
+}
+
+.password {
+    height: 25%;
+    width: 100%;
+    margin: 1.5em 0 2em;
+    background: white;
+}
+
+.input {
+    width: 100%;
+    height: 100%;
+    display: block;
+    font-size: 1.5em;
+}
+
+.formheader {
+    display: grid;
+    width: 70%;
+    height: 25%;
+    grid-template: 100% / 1fr 2fr;
+    order: -1;
+    margin-top: 2em;
+}
+
+.image {
+    background-size: 100%;
+}
+
+.entertext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: grey;
+    font-size: 1.5em;
+}
+
+.enter {
+    height: 3em;
+    width: 15em;
+    margin-bottom: 3em;
+    background: rgba(0, 162, 255, .75);
+    color: white;
+    border-radius: .5em;
+    border: none;
+}
+
+.non-registered {
+    margin-top: 30px;
+}
+
+.alert-warning{
+    float: left;
+    clear: both;
+    width: 400px;
+    margin: 20px;
+    text-align: left;
+
+}
+
+
+form{
+    margin-left: 32%;
+    width: 500px;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+

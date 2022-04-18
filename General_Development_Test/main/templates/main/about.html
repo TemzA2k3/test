@@ -1,0 +1,33 @@
+{% extends 'main/index.html' %}
+{% load static %}
+
+
+{% block title %} Про создателя {% endblock %}
+
+{% block content %}
+
+<div class="row">
+    <div class="text-center about_me">
+        <p>Вы можете связаться со мной через мои социальные сети</p>
+    </div>
+</div>
+<div class="row">
+    <div class="text-center">
+        <table style="text-align: center; width: 100%; margin-top: 150px;">
+            <tr>
+                {% with var1='main/img/4.png' %}
+                <td><a href="https://vk.com/id221336549"><img class="social_net" src="{% static var1 %}"></a></td>
+                {% endwith %}
+                {% with var1='main/img/5.png' %}
+                <td><a href="https://t.me/Temochka_03"><img class="social_net" src="{% static var1 %}"></a></td>
+                {% endwith %}
+                {% with var1='main/img/6.png' %}
+                <td><a href="https://www.instagram.com/temochka_03/"><img class="social_net" src="{% static var1 %}"></a></td>
+                {% endwith %}
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+{% endblock %}

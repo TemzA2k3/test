@@ -1,0 +1,37 @@
+{% extends 'main/index.html' %}
+{% load static %}
+
+{% block title %} Вопросы {% endblock %}
+
+{% block content %}
+
+<div class="features">
+    {% for q in quest %}
+    {% with var1=q.id|add:'1' %}
+    {% if validation == True %}
+    <h2>Был введен неверный тип ответа!</h2>
+    {% endif %}
+    <form action="{% url 'question' question_id=var1 %}" method="post">
+        {% csrf_token %}
+        <div class="alert alert-warning">
+            <h3>{{ q.title }}</h3>
+            <p>{{ q.content }}</p>
+        </div>
+        <input name="answer_field" type="text" placeholder="Ответ:" class="form-control"><br>
+        {% if True and q.id|add:'0' == 10 %}
+        <form action="{% url 'res' %}" method="post">
+            <input type="hidden" name="action" value="end_test">
+            <button name="bt-2" type="submit" class="btn btn-primary btn-lg">Завершить тест</button>
+            <br>
+        </form>
+        {% else %}
+        <input type="hidden" name="action" value="cont_test">
+        <button name="bt-1" type="submit" class="btn btn-primary btn-lg">Следующий вопрос</button>
+        <br>
+        {% endif %}
+    </form>
+    {% endwith %}
+    {% endfor %}
+</div>
+
+{% endblock %}

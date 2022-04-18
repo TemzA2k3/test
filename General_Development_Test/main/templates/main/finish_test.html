@@ -1,0 +1,17 @@
+{% extends 'main/index.html' %}
+{% load static %}
+
+{% block title %} Результаты {% endblock %}
+
+{% block content %}
+
+<div class="features">
+    <h1>Поздравляю!</h1>
+    <form action="{% url 'home' %}" method="get">
+        <h2>Вы набрали {{ result.value }} баллов!</h2><br>
+        <h2>Спасибо за участие!</h2><br>
+        <button class="btn btn-primary btn-lg" type="submit">Вернуться на главную</button>
+    </form>
+</div>
+
+{% endblock %}

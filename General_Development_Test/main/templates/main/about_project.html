@@ -1,0 +1,27 @@
+{% extends 'main/index.html' %}
+{% load static %}
+
+{% block title %} Про проект {% endblock %}
+
+{% block content %}
+    <div class="row">
+    <div class="text-center about_me">
+        <p>Больше про проект тут</p>
+    </div>
+</div>
+<div class="row">
+    <div class="text-center">
+        <table style="text-align: center; width: 100%; margin-top: 150px;">
+            <tr>
+                {% with var1='main/img/git.png' %}
+                <td><a href="https://github.com/TemzA2k3"><img class="social_net" src="{% static var1 %}"></a></td>
+                {% endwith %}
+                {% with var1='main/img/copy.png' %}
+                <td><a href="http://127.0.0.1:8000/rules/"><img class="social_net" src="{% static var1 %}"></a></td>
+                {% endwith %}
+            </tr>
+        </table>
+    </div>
+</div>
+
+{% endblock %}
